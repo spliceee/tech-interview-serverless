@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "esbuild": "^0.19.4",
+    "serverless-esbuild": "^1.48.4"
+  }
+}

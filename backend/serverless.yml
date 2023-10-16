@@ -1,0 +1,20 @@
+org: andriykurenda93
+app: serverless-demo
+service: serverless-demo-app
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  processVocabulary:
+    handler: handler.processVocabulary
+    events:
+      - httpApi:
+          path: /vocabulary
+          method: post
+          cors: true
+
+plugins:
+  - serverless-esbuild
